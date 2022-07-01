@@ -16,6 +16,8 @@
 		786409AE286ED75400DCC886 /* TestApp01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786409AD286ED75400DCC886 /* TestApp01Tests.swift */; };
 		786409B8286ED75400DCC886 /* TestApp01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786409B7286ED75400DCC886 /* TestApp01UITests.swift */; };
 		786409BA286ED75400DCC886 /* TestApp01UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786409B9286ED75400DCC886 /* TestApp01UITestsLaunchTests.swift */; };
+		78A7C0D9286EF3A3008C4830 /* QiitaStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A7C0D8286EF3A3008C4830 /* QiitaStruct.swift */; };
+		78A7C0DB286EF3D2008C4830 /* QiitaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A7C0DA286EF3D2008C4830 /* QiitaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		786409B3286ED75400DCC886 /* TestApp01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestApp01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		786409B7286ED75400DCC886 /* TestApp01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp01UITests.swift; sourceTree = "<group>"; };
 		786409B9286ED75400DCC886 /* TestApp01UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp01UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78A7C0D8286EF3A3008C4830 /* QiitaStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaStruct.swift; sourceTree = "<group>"; };
+		78A7C0DA286EF3D2008C4830 /* QiitaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				78640996286ED75200DCC886 /* AppDelegate.swift */,
 				78640998286ED75200DCC886 /* SceneDelegate.swift */,
 				7864099A286ED75200DCC886 /* ViewController.swift */,
+				78A7C0D8286EF3A3008C4830 /* QiitaStruct.swift */,
+				78A7C0DA286EF3D2008C4830 /* QiitaViewModel.swift */,
 				7864099C286ED75200DCC886 /* Main.storyboard */,
 				7864099F286ED75300DCC886 /* Assets.xcassets */,
 				786409A1286ED75300DCC886 /* LaunchScreen.storyboard */,
@@ -259,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7864099B286ED75200DCC886 /* ViewController.swift in Sources */,
+				78A7C0D9286EF3A3008C4830 /* QiitaStruct.swift in Sources */,
 				78640997286ED75200DCC886 /* AppDelegate.swift in Sources */,
+				78A7C0DB286EF3D2008C4830 /* QiitaViewModel.swift in Sources */,
 				78640999286ED75200DCC886 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
