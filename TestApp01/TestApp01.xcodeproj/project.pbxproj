@@ -18,6 +18,8 @@
 		786409BA286ED75400DCC886 /* TestApp01UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786409B9286ED75400DCC886 /* TestApp01UITestsLaunchTests.swift */; };
 		78A7C0D9286EF3A3008C4830 /* QiitaStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A7C0D8286EF3A3008C4830 /* QiitaStruct.swift */; };
 		78A7C0DB286EF3D2008C4830 /* QiitaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A7C0DA286EF3D2008C4830 /* QiitaViewModel.swift */; };
+		78AE8404287270170061CB52 /* QiitaItemStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AE8403287270170061CB52 /* QiitaItemStruct.swift */; };
+		78AE8406287270490061CB52 /* QiitaItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AE8405287270490061CB52 /* QiitaItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		786409B9286ED75400DCC886 /* TestApp01UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp01UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		78A7C0D8286EF3A3008C4830 /* QiitaStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaStruct.swift; sourceTree = "<group>"; };
 		78A7C0DA286EF3D2008C4830 /* QiitaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaViewModel.swift; sourceTree = "<group>"; };
+		78AE8403287270170061CB52 /* QiitaItemStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemStruct.swift; sourceTree = "<group>"; };
+		78AE8405287270490061CB52 /* QiitaItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +111,9 @@
 				78640998286ED75200DCC886 /* SceneDelegate.swift */,
 				7864099A286ED75200DCC886 /* ViewController.swift */,
 				78A7C0D8286EF3A3008C4830 /* QiitaStruct.swift */,
+				78AE8403287270170061CB52 /* QiitaItemStruct.swift */,
 				78A7C0DA286EF3D2008C4830 /* QiitaViewModel.swift */,
+				78AE8405287270490061CB52 /* QiitaItemViewModel.swift */,
 				7864099C286ED75200DCC886 /* Main.storyboard */,
 				7864099F286ED75300DCC886 /* Assets.xcassets */,
 				786409A1286ED75300DCC886 /* LaunchScreen.storyboard */,
@@ -264,11 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78AE8404287270170061CB52 /* QiitaItemStruct.swift in Sources */,
 				7864099B286ED75200DCC886 /* ViewController.swift in Sources */,
 				78A7C0D9286EF3A3008C4830 /* QiitaStruct.swift in Sources */,
 				78640997286ED75200DCC886 /* AppDelegate.swift in Sources */,
 				78A7C0DB286EF3D2008C4830 /* QiitaViewModel.swift in Sources */,
 				78640999286ED75200DCC886 /* SceneDelegate.swift in Sources */,
+				78AE8406287270490061CB52 /* QiitaItemViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

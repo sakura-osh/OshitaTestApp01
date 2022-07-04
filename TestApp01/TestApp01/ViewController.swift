@@ -17,11 +17,11 @@ class ViewController: UIViewController {
         self.title = "QiitaAPI"
 
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.frame = view.frame
         view.addSubview(tableView)
         QiitaViewModel.fetchArticle(completion: { (articles) in
             self.articles = articles
-            print(articles)
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -49,4 +49,14 @@ extension ViewController: UITableViewDataSource {
         return articles.count
     }
 
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        print(articles[indexPath.row])
+        QiitaItemViewModel.fetchArticle(itemId: articles[indexPath.row].id, completion: { (itemArticles) in
+            print(itemArticles)
+        })
+    }
 }
