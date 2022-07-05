@@ -8,9 +8,7 @@
 import Foundation
 
 struct QiitaItemStruct: Codable {
-    var rendered_body: String
-    var body: String
-    var create_at: Data
+//    var create_at: String
     struct User: Codable {
         var name: String
     }

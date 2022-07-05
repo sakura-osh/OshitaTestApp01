@@ -10,9 +10,9 @@ import Foundation
 class QiitaItemViewModel {
     static func fetchArticle(itemId: String, completion: @escaping ([QiitaItemStruct]) -> Swift.Void) {
 
-        let url = "https://qiita.com/api/v2/items/:" + itemId
+        let url = "https://qiita.com/api/v2/items/" + itemId
 
-        guard var urlComponents = URLComponents(string: url) else {
+        guard let urlComponents = URLComponents(string: url) else {
             return
         }
 
