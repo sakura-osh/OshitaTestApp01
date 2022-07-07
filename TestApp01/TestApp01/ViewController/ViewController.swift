@@ -27,6 +27,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setUpSearchBar()
+        setUpTableView()
+        setUpIndicator()
+    }
+    
+    private func setUpSearchBar() {
+        searchBar.delegate = self
+    }
+    
+    private func setUpTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    private func setUpIndicator() {
+        indicator.center = view.center
+        indicator.style = .large
+        indicator.color = .lightGray
+        view.addSubview(indicator)
     }
     
     private func refreshTableView() {
@@ -34,7 +53,23 @@ class ViewController: UIViewController {
         tableView.reloadData()
     }
 
+    private func showSearchTextIsEmptyAlert() {
+        let alert = UIAlertController(title: "確認", message: "リポジトリ名を入力してください", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "やり直し", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func showSearchResponseErrorAlert() {
+        let alert = UIAlertController(title: "エラー", message: "検索に失敗しました", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "やり直す", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
 
+    @IBAction func tapRefreshButton(_ sender: Any) {
+        refreshTableView()
+        searchBar.text = ""
+    }
+    
 }
 
 extension ViewController: UISearchBarDelegate {
@@ -54,8 +89,60 @@ extension ViewController: UISearchBarDelegate {
         
         if let searchText = searchBar.text {
             if searchText == "" {
-                
+                showSearchTextIsEmptyAlert()
+                indicator.stopAnimating()
+            } else {
+                Task {
+                    do {
+                        var items = try await searchRepository.searchGitHubRepository(searchText: searchText)
+                        print("items:", items as Any)
+                        
+                        if items.count == 0 {
+                            let emptyItem = Item(full_name: "検索結果0件", description: "")
+                            items.append(emptyItem)
+                            self.items = items
+                            tableView.reloadData()
+                            indicator.stopAnimating()
+                        } else {
+                            self.items = items
+                            tableView.reloadData()
+                            indicator.stopAnimating()
+                        }
+                    }
+                    catch(let error) {
+                        print("error:", error.localizedDescription)
+                        indicator.stopAnimating()
+                        showSearchResponseErrorAlert()
+                    }
+                }
             }
         }
+    }
+}
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let name = cell.viewWithTag(1) as? UILabel
+        let description = cell.viewWithTag(2) as? UILabel
+        name?.text = items[indexPath.row].full_name
+        if description?.text != "" {
+            description?.text = items[indexPath.row].description
+        } else {
+            description?.text = "not description text."
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

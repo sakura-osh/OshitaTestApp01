@@ -8,7 +8,7 @@
 import Foundation
 
 class SearchRepositoryDataStore {
-    private let baseUrl = "https://api.github.com"
+    private let baseUrl = "https://api.github.com/"
     private let shared = URLSession.shared
     private let decoder = JSONDecoder()
     
@@ -23,5 +23,4 @@ class SearchRepositoryDataStore {
         let response = try decoder.decode(SearchResponseModel.self, from: data)
         return response
     }
-    
 }
