@@ -8,6 +8,8 @@ target 'TestApp01' do
   # Pods for TestApp01
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxOptional'
+  pod 'RxWebKit'
 
   target 'TestApp01Tests' do
     inherit! :search_paths

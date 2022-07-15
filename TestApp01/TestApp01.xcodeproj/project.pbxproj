@@ -11,12 +11,24 @@
 		78640997286ED75200DCC886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78640996286ED75200DCC886 /* AppDelegate.swift */; };
 		78640999286ED75200DCC886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78640998286ED75200DCC886 /* SceneDelegate.swift */; };
 		7864099B286ED75200DCC886 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7864099A286ED75200DCC886 /* ViewController.swift */; };
-		7864099E286ED75200DCC886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7864099C286ED75200DCC886 /* Main.storyboard */; };
 		786409A0286ED75300DCC886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7864099F286ED75300DCC886 /* Assets.xcassets */; };
 		786409A3286ED75300DCC886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786409A1286ED75300DCC886 /* LaunchScreen.storyboard */; };
 		786409AE286ED75400DCC886 /* TestApp01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786409AD286ED75400DCC886 /* TestApp01Tests.swift */; };
 		786409B8286ED75400DCC886 /* TestApp01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786409B7286ED75400DCC886 /* TestApp01UITests.swift */; };
 		786409BA286ED75400DCC886 /* TestApp01UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786409B9286ED75400DCC886 /* TestApp01UITestsLaunchTests.swift */; };
+		78A33D2A287F9D6400BB1445 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A33D29287F9D6400BB1445 /* ViewController.xib */; };
+		78A33D2C287FA39000BB1445 /* CounterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A33D2B287FA39000BB1445 /* CounterPresenter.swift */; };
+		78A33D2E287FAD8400BB1445 /* Counter2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A33D2D287FAD8400BB1445 /* Counter2ViewController.swift */; };
+		78A33D30287FAE8E00BB1445 /* Counter2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A33D2F287FAE8E00BB1445 /* Counter2ViewController.xib */; };
+		78A33D32287FC04500BB1445 /* Counter2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A33D31287FC04500BB1445 /* Counter2ViewModel.swift */; };
+		78A33D37287FCD0C00BB1445 /* Counter3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A33D36287FCD0C00BB1445 /* Counter3ViewController.swift */; };
+		78A33D39287FCD1E00BB1445 /* Counter3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A33D38287FCD1E00BB1445 /* Counter3ViewController.xib */; };
+		78A33D3B287FCFA100BB1445 /* Counter3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A33D3A287FCFA100BB1445 /* Counter3ViewModel.swift */; };
+		78A33D3E287FF18100BB1445 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A33D3D287FF18100BB1445 /* WKWebViewController.swift */; };
+		78A33D40287FF19600BB1445 /* WKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A33D3F287FF19600BB1445 /* WKWebViewController.xib */; };
+		78A33D432880069A00BB1445 /* WKWeb2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A33D422880069A00BB1445 /* WKWeb2ViewController.swift */; };
+		78A33D452880081900BB1445 /* WKWeb2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A33D442880081900BB1445 /* WKWeb2ViewController.xib */; };
+		78A33D4A2880181300BB1445 /* WKWeb3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A33D492880181300BB1445 /* WKWeb3ViewController.swift */; };
 		A263704F086EBB9B992B375A /* Pods_TestApp01Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBC14217434B9FB7065ED08 /* Pods_TestApp01Tests.framework */; };
 		DD06104D076B6B00BE6019EF /* Pods_TestApp01_TestApp01UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB10913402CC982122E5F969 /* Pods_TestApp01_TestApp01UITests.framework */; };
 /* End PBXBuildFile section */
@@ -46,7 +58,6 @@
 		78640996286ED75200DCC886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78640998286ED75200DCC886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7864099A286ED75200DCC886 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7864099D286ED75200DCC886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7864099F286ED75300DCC886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786409A2286ED75300DCC886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786409A4286ED75300DCC886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +66,20 @@
 		786409B3286ED75400DCC886 /* TestApp01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestApp01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		786409B7286ED75400DCC886 /* TestApp01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp01UITests.swift; sourceTree = "<group>"; };
 		786409B9286ED75400DCC886 /* TestApp01UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp01UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78A33D29287F9D6400BB1445 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		78A33D2B287FA39000BB1445 /* CounterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterPresenter.swift; sourceTree = "<group>"; };
+		78A33D2D287FAD8400BB1445 /* Counter2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter2ViewController.swift; sourceTree = "<group>"; };
+		78A33D2F287FAE8E00BB1445 /* Counter2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Counter2ViewController.xib; sourceTree = "<group>"; };
+		78A33D31287FC04500BB1445 /* Counter2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter2ViewModel.swift; sourceTree = "<group>"; };
+		78A33D36287FCD0C00BB1445 /* Counter3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter3ViewController.swift; sourceTree = "<group>"; };
+		78A33D38287FCD1E00BB1445 /* Counter3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Counter3ViewController.xib; sourceTree = "<group>"; };
+		78A33D3A287FCFA100BB1445 /* Counter3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter3ViewModel.swift; sourceTree = "<group>"; };
+		78A33D3D287FF18100BB1445 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		78A33D3F287FF19600BB1445 /* WKWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WKWebViewController.xib; sourceTree = "<group>"; };
+		78A33D422880069A00BB1445 /* WKWeb2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWeb2ViewController.swift; sourceTree = "<group>"; };
+		78A33D442880081900BB1445 /* WKWeb2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WKWeb2ViewController.xib; sourceTree = "<group>"; };
+		78A33D482880106E00BB1445 /* WKWeb3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WKWeb3ViewController.xib; sourceTree = "<group>"; };
+		78A33D492880181300BB1445 /* WKWeb3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWeb3ViewController.swift; sourceTree = "<group>"; };
 		8446CF8CB310DC90173B2B04 /* Pods-TestApp01Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp01Tests.debug.xcconfig"; path = "Target Support Files/Pods-TestApp01Tests/Pods-TestApp01Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB10913402CC982122E5F969 /* Pods_TestApp01_TestApp01UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestApp01_TestApp01UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C62654853FFDAB4906B65C84 /* Pods-TestApp01-TestApp01UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp01-TestApp01UITests.debug.xcconfig"; path = "Target Support Files/Pods-TestApp01-TestApp01UITests/Pods-TestApp01-TestApp01UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +126,6 @@
 				8446CF8CB310DC90173B2B04 /* Pods-TestApp01Tests.debug.xcconfig */,
 				215F3B684D9F0F9E2800730C /* Pods-TestApp01Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,10 +154,14 @@
 		78640995286ED75200DCC886 /* TestApp01 */ = {
 			isa = PBXGroup;
 			children = (
+				78A33D34287FC92000BB1445 /* Counter */,
+				78A33D33287FC82600BB1445 /* Counter2 */,
+				78A33D35287FCCE600BB1445 /* Counter3 */,
+				78A33D3C287FF15900BB1445 /* WKWeb */,
+				78A33D412880061800BB1445 /* WKWeb2 */,
+				78A33D462880104C00BB1445 /* WKWeb3 */,
 				78640996286ED75200DCC886 /* AppDelegate.swift */,
 				78640998286ED75200DCC886 /* SceneDelegate.swift */,
-				7864099A286ED75200DCC886 /* ViewController.swift */,
-				7864099C286ED75200DCC886 /* Main.storyboard */,
 				7864099F286ED75300DCC886 /* Assets.xcassets */,
 				786409A1286ED75300DCC886 /* LaunchScreen.storyboard */,
 				786409A4286ED75300DCC886 /* Info.plist */,
@@ -156,6 +184,63 @@
 				786409B9286ED75400DCC886 /* TestApp01UITestsLaunchTests.swift */,
 			);
 			path = TestApp01UITests;
+			sourceTree = "<group>";
+		};
+		78A33D33287FC82600BB1445 /* Counter2 */ = {
+			isa = PBXGroup;
+			children = (
+				78A33D2D287FAD8400BB1445 /* Counter2ViewController.swift */,
+				78A33D2F287FAE8E00BB1445 /* Counter2ViewController.xib */,
+				78A33D31287FC04500BB1445 /* Counter2ViewModel.swift */,
+			);
+			path = Counter2;
+			sourceTree = "<group>";
+		};
+		78A33D34287FC92000BB1445 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				78A33D29287F9D6400BB1445 /* ViewController.xib */,
+				7864099A286ED75200DCC886 /* ViewController.swift */,
+				78A33D2B287FA39000BB1445 /* CounterPresenter.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		78A33D35287FCCE600BB1445 /* Counter3 */ = {
+			isa = PBXGroup;
+			children = (
+				78A33D36287FCD0C00BB1445 /* Counter3ViewController.swift */,
+				78A33D38287FCD1E00BB1445 /* Counter3ViewController.xib */,
+				78A33D3A287FCFA100BB1445 /* Counter3ViewModel.swift */,
+			);
+			path = Counter3;
+			sourceTree = "<group>";
+		};
+		78A33D3C287FF15900BB1445 /* WKWeb */ = {
+			isa = PBXGroup;
+			children = (
+				78A33D3D287FF18100BB1445 /* WKWebViewController.swift */,
+				78A33D3F287FF19600BB1445 /* WKWebViewController.xib */,
+			);
+			path = WKWeb;
+			sourceTree = "<group>";
+		};
+		78A33D412880061800BB1445 /* WKWeb2 */ = {
+			isa = PBXGroup;
+			children = (
+				78A33D422880069A00BB1445 /* WKWeb2ViewController.swift */,
+				78A33D442880081900BB1445 /* WKWeb2ViewController.xib */,
+			);
+			path = WKWeb2;
+			sourceTree = "<group>";
+		};
+		78A33D462880104C00BB1445 /* WKWeb3 */ = {
+			isa = PBXGroup;
+			children = (
+				78A33D492880181300BB1445 /* WKWeb3ViewController.swift */,
+				78A33D482880106E00BB1445 /* WKWeb3ViewController.xib */,
+			);
+			path = WKWeb3;
 			sourceTree = "<group>";
 		};
 		E9D1B2A9C96408A5DCC29E4A /* Frameworks */ = {
@@ -277,9 +362,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78A33D30287FAE8E00BB1445 /* Counter2ViewController.xib in Resources */,
 				786409A3286ED75300DCC886 /* LaunchScreen.storyboard in Resources */,
+				78A33D2A287F9D6400BB1445 /* ViewController.xib in Resources */,
+				78A33D40287FF19600BB1445 /* WKWebViewController.xib in Resources */,
 				786409A0286ED75300DCC886 /* Assets.xcassets in Resources */,
-				7864099E286ED75200DCC886 /* Main.storyboard in Resources */,
+				78A33D39287FCD1E00BB1445 /* Counter3ViewController.xib in Resources */,
+				78A33D452880081900BB1445 /* WKWeb2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +497,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7864099B286ED75200DCC886 /* ViewController.swift in Sources */,
+				78A33D3B287FCFA100BB1445 /* Counter3ViewModel.swift in Sources */,
+				78A33D2C287FA39000BB1445 /* CounterPresenter.swift in Sources */,
+				78A33D3E287FF18100BB1445 /* WKWebViewController.swift in Sources */,
+				78A33D32287FC04500BB1445 /* Counter2ViewModel.swift in Sources */,
+				78A33D432880069A00BB1445 /* WKWeb2ViewController.swift in Sources */,
 				78640997286ED75200DCC886 /* AppDelegate.swift in Sources */,
+				78A33D4A2880181300BB1445 /* WKWeb3ViewController.swift in Sources */,
+				78A33D37287FCD0C00BB1445 /* Counter3ViewController.swift in Sources */,
 				78640999286ED75200DCC886 /* SceneDelegate.swift in Sources */,
+				78A33D2E287FAD8400BB1445 /* Counter2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,14 +543,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7864099C286ED75200DCC886 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7864099D286ED75200DCC886 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		786409A1286ED75300DCC886 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -591,7 +680,6 @@
 				INFOPLIST_FILE = TestApp01/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -619,7 +707,6 @@
 				INFOPLIST_FILE = TestApp01/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Counter3ViewController" customModule="TestApp01" customModuleProvider="target">
+            <connections>
+                <outlet property="countDownButton" destination="FSQ-b1-WVe" id="SJ8-6K-BRx"/>
+                <outlet property="countLabel" destination="mod-Nn-Pgz" id="dnk-pF-tcq"/>
+                <outlet property="countResetButton" destination="UQT-yF-roK" id="mci-1f-153"/>
+                <outlet property="countUpButton" destination="mE4-Ez-74q" id="mDj-Vm-i3b"/>
+                <outlet property="view" destination="iN0-l3-epB" id="jmH-jb-Ddt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mod-Nn-Pgz">
+                    <rect key="frame" x="202" y="89" width="10.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mE4-Ez-74q">
+                    <rect key="frame" x="107" y="148" width="200" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="fbB-yY-oR1"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="カウントアップ"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSQ-b1-WVe">
+                    <rect key="frame" x="107" y="213" width="200" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="カウントダウン"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQT-yF-roK">
+                    <rect key="frame" x="107" y="278" width="200" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="リセット"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="UQT-yF-roK" firstAttribute="width" secondItem="mE4-Ez-74q" secondAttribute="width" id="2sn-0k-6Pc"/>
+                <constraint firstItem="UQT-yF-roK" firstAttribute="top" secondItem="FSQ-b1-WVe" secondAttribute="bottom" constant="34" id="5Js-g1-rQF"/>
+                <constraint firstItem="mod-Nn-Pgz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="45" id="BX6-aX-5RN"/>
+                <constraint firstItem="FSQ-b1-WVe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ImI-zJ-lh7"/>
+                <constraint firstItem="FSQ-b1-WVe" firstAttribute="top" secondItem="mE4-Ez-74q" secondAttribute="bottom" constant="34" id="PCu-dl-tDp"/>
+                <constraint firstItem="mE4-Ez-74q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Sfy-AA-XQn"/>
+                <constraint firstItem="mod-Nn-Pgz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ktb-rc-f1K"/>
+                <constraint firstItem="FSQ-b1-WVe" firstAttribute="width" secondItem="mE4-Ez-74q" secondAttribute="width" id="lDT-HG-H0g"/>
+                <constraint firstItem="UQT-yF-roK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xMn-6O-Fn1"/>
+                <constraint firstItem="mE4-Ez-74q" firstAttribute="top" secondItem="mod-Nn-Pgz" secondAttribute="bottom" constant="38" id="xRF-tZ-9mw"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="126"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
